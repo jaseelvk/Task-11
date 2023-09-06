@@ -1,0 +1,17 @@
+Font Family :Open Sans
+link:https:https://fonts.google.com/specimen/Open+Sans
+
+Font Size - 
+H1 :56px
+H2 :28px
+H3 :26px
+H3 :22px
+H4 :20px
+H5 :18px
+
+Colours -
+white:F9F8F8
+Grey:8D8989
+vilot:D2A2F7
+light blue:A5E3E3
+
