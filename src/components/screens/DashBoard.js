@@ -28,7 +28,6 @@ function DashBoard() {
               </Total>
             </TotelContainer>
           </MaleContainer>
-
           <FemaleContainer>
             <GuestContainer>
               <ImgContainer>
