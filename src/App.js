@@ -6,6 +6,7 @@ import LeftNav from "./components/includes/LeftNav";
 import Header from "./components/includes/Header";
 import DashBoard from "./components/screens/DashBoard";
 import GuestTraffic from "./components/screens/GuestTraffic";
+import GuestName from "./components/screens/GuestName";
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
             <Routes>
               <Route path="/" element={<DashBoard />} />
               <Route path="/guesttraffic" element={<GuestTraffic />} />
-              <Route path="/" element={<DashBoard />} />
-              <Route path="/" element={<DashBoard />} />
-              <Route path="/" element={<DashBoard />} />
+              <Route path="/guestname" element={<GuestName />} />
+              
+              
             </Routes>
           </Container>
         </FirstContainer>

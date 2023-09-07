@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
+import GuestName from "./GuestName";
 function DashBoard() {
   return (
     <>
@@ -60,7 +61,8 @@ function DashBoard() {
             </GraphImgContainer>
           </GraphContainer>
         </DashContainer>
-
+      
+        <GuestName/>
         
       </Container>
     </>
@@ -71,7 +73,7 @@ const Container = styled.div`
   height: 100hv;
   background-color: #f9f7f8;
 `;
-const DashContainer = styled.div`
+const DashContainer = styled.span`
   display: flex;
   jsutify-content: space-beteen;
   padding: 20px;
@@ -84,7 +86,7 @@ const MaleContainer = styled.div`
   background-color: #a6e3e4;
   border-radius: 20px;
 `;
-const ImgContainer = styled.div`
+const ImgContainer = styled.span`
   width: 40px;
   height: 40px;
   background-color: #000;
@@ -130,10 +132,11 @@ const TotalCount = styled.h1`
 const Bar = styled.div`
   border-right: 1px solid #000;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
+  font-weight: 700;
 `;
 const Total = styled.div`
-  padding: 20px;
+  padding: 0px 20px 0px  20px;
 `;
 const InvitesHead = styled.h5`
   font-weight: 500;
@@ -161,7 +164,7 @@ const GraphHead = styled.h4`
 const GraphImgContainer = styled.div``;
 const GraphImg = styled.img`
   display: block;
-  width: 200px;
+  width: 156px;
   margin: 0 auto;
 `;
 
