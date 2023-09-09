@@ -5,14 +5,14 @@ function Header() {
   return (
 <>
 <MainContainer>
-    <HeadContainer>
-            <NavView>
+    <HeadContainer >
+            <NavView to="/">
                 <DataLink>OverView</DataLink>
             </NavView>
-            <NavView>
+            <NavView to="/">
                 <DataLink>Guestlist</DataLink>
             </NavView>
-            <NavView>
+            <NavView to="/">
                 <DataLink>Temprory traffic</DataLink>
             </NavView>
         </HeadContainer>
@@ -58,10 +58,19 @@ font-weight: 600;
     color: #000;
   border-bottom: 2px solid #000;
 }
+
+@media all and (max-width:1080px){
+    margin-right: 15px;
+}
+
+@media all and (max-width:980px){
+    margin-right: 7px;
+}
+    
 `;
 
 const SettingsHead = styled.div`
-margin-top:3px;
+margin-top:20px;
 display:flex;
 justify-content: space-between;
 

@@ -7,6 +7,11 @@ import Header from "./components/includes/Header";
 import DashBoard from "./components/screens/DashBoard";
 import GuestTraffic from "./components/screens/GuestTraffic";
 import GuestName from "./components/screens/GuestName";
+import CateringSts from "./components/screens/CateringSts";
+import Gift from "./components/screens/Gift";
+import Account from "./components/screens/Account";
+import Wallet from "./components/screens/Wallet";
+import HelpAndSupport from "./components/screens/HelpAndsupport";
 
 function App() {
   return (
@@ -19,8 +24,12 @@ function App() {
             <Routes>
               <Route path="/" element={<DashBoard />} />
               <Route path="/guesttraffic" element={<GuestTraffic />} />
-              <Route path="/guestname" element={<GuestName />} />
-              
+              <Route path="/cateringsts" element={<CateringSts />} />
+              <Route path="/gift" element={<Gift />} />
+              <Route path="/account" element={<Account />} />
+              <Route path="/wallet" element={<Wallet />} />
+              <Route path="/help" element={<HelpAndSupport />} />
+              <Route path="/" element={<Header />} />
               
             </Routes>
           </Container>

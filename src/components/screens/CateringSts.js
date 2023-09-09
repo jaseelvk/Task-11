@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-function GuestTraffic() {
+function CateringSts() {
   return (
  <>
   <SoonContainer>
@@ -32,5 +32,4 @@ animation-duration: 4s;
 const ComingSoon = styled.h1`
   font-size: 55px;
 `;
-export default GuestTraffic
-
+export default CateringSts

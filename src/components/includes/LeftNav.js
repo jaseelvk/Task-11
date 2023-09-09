@@ -12,7 +12,7 @@ import Header from './Header';
         src={require("../../Assets/Logo.svg").default} alt="Logo" />
                 <NavHead>MAIN MENU</NavHead>
     <NavList>
-          <NavItem>
+          <NavItem to="/">
                 <NavImg 
                             src=
                             {require("../../Assets/akar-icons_dashboard.svg").default}
@@ -21,7 +21,7 @@ import Header from './Header';
 
           </NavItem>
 
-          <NavItem>
+          <NavItem to="/cateringsts">
                 <NavImg 
                             src=
                             {require("../../Assets/fluent_food-cake-20-regular.svg").default}
@@ -30,7 +30,7 @@ import Header from './Header';
 
           </NavItem>
                 
-          <NavItem to="/guesttraffic">
+          <NavItem to="/guesttraffic" >
                 <NavImg 
                             src=
                             {require("../../Assets/bx_bar-chart-square.svg").default}
@@ -39,7 +39,7 @@ import Header from './Header';
 
           </NavItem>
 
-          <NavItem>
+          <NavItem to="/gift">
                 <NavImg 
                             src=
                             {require("../../Assets/ant-design_gift-outlined.svg").default}
@@ -54,7 +54,7 @@ import Header from './Header';
     </NavList>
     <NavHead>SETTINGS</NavHead>
     <NavListBottom>
-          <NavItem>
+          <NavItem to="/account">
                 <NavImg 
                             src=
                             {require("../../Assets/healthicons_ui-user-profile-outline.svg").default}
@@ -64,7 +64,7 @@ import Header from './Header';
           </NavItem>            
 
 
-          <NavItem>
+          <NavItem to="/wallet">
                 <NavImg 
                             src=
                             {require("../../Assets/clarity_wallet-line.svg").default}
@@ -72,7 +72,7 @@ import Header from './Header';
                       <Span >Wallet</Span>
 
           </NavItem>
-          <NavItem>
+          <NavItem to="/help">
                 <NavImg 
                             src=
                             {require("../../Assets/fluent_chat-help-20-regular.svg").default}
@@ -88,16 +88,15 @@ import Header from './Header';
     </>
   )
 };
-const WrapperContainer = styled.div`
-      display:flex;
-`
 
 const NavContainer = styled.div`
       margin-left:20px;
       width: 16%;
-      padding:42px 17px 10px 31px
-      border-style: 
-     
+      padding:36px 17px 10px 11px;
+      border-style: none;
+      @media all and (max-width:1080px) {
+            width: 18%;
+      }
 `;
 
 const NavLogo = styled.img`
@@ -124,6 +123,7 @@ const NavItem = styled(NavLink)`
       justify-content:start;
       padding:20px;
       text-decoration: none;
+ 
 
 `;
 const NavListBottom = styled.div`
@@ -134,6 +134,13 @@ const NavListBottom = styled.div`
 const NavImg = styled.img`
       display:block;
       padding:0px 10px 0 0 ;
+
+
+
+    @media all and (max-width:1080px) {
+      display: block;
+      padding: 0px 4px 0 0; 
+}
 `;
 
 const Span = styled.span`
@@ -145,6 +152,15 @@ margin-right: 10px;
 &:hover {
   font-weight: 600;
   color: #000;
+}
+@media all and (max-width:1280px) {
+ font-size: 13px;
+    margin-right: 1px;         
+}
+
+@media all and (max-width:1080px) {
+      font-size: 12px;
+      margin-right: 0px;   
 }
 
 `;
