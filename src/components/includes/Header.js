@@ -43,6 +43,9 @@ margin-top:50px;
 display:flex;
 justify-content:space-around;
 
+@media all and (max-width:360px){
+    width:100%;
+}
 `;
 
 const NavView = styled.ul`
@@ -66,6 +69,14 @@ font-weight: 600;
 @media all and (max-width:980px){
     margin-right: 7px;
 }
+@media all and (max-width:768px){
+    margin-right: 0px;
+    font-size:10px;
+}
+@media all and (max-width:360px){
+    margin-right: 0px;
+    font-size:13px;
+}
     
 `;
 
@@ -88,6 +99,9 @@ const SettingImg = styled.img`
     &:last-child {
         border-radius:50px;
         
+    }
+    @media all and (max-width:360px){
+        display:none;
     }
 `;
 

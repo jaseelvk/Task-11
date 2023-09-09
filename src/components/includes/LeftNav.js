@@ -97,6 +97,13 @@ const NavContainer = styled.div`
       @media all and (max-width:1080px) {
             width: 18%;
       }
+      @media all and (max-width:480px){
+            margin-left: -3px;
+            width: 16%;
+            padding: 26px 36px 10px 11px;
+            border-style: none;
+      }
+
 `;
 
 const NavLogo = styled.img`
@@ -104,6 +111,9 @@ const NavLogo = styled.img`
       width:62%;
       margin-bottom:50px;
       margin-top:60px;
+      @media all and (max-width:480px){
+            display:none;
+      }
 `;
 
 const NavHead = styled.h5`
@@ -123,7 +133,10 @@ const NavItem = styled(NavLink)`
       justify-content:start;
       padding:20px;
       text-decoration: none;
- 
+      @media all and (max-width:480px){
+            padding:12px;
+          
+          }
 
 `;
 const NavListBottom = styled.div`

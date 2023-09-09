@@ -83,11 +83,23 @@ function GuestList() {
 }
 const AllMain = styled.div`
   display: flex;
+  @media all and (max-width:768px){
+    flex-wrap: wrap;
+  }
 `;
 const GuestListContainer = styled.div`
   width: 50%;
   height: 100vh;
   background-color: #f9f7f8;
+  @media all and (max-width: 640px) {
+    margin-left:80px;
+  }
+  @media all and (max-width:480px){
+    margin-left:20px;
+  }
+  @media all and (max-width:360px){
+    margin-left:0px;
+  }
 `;
 const GuestTowerContainer = styled.span`
   display: flex;
@@ -102,6 +114,11 @@ const GuestTowerContainer = styled.span`
     transition: 2sec;
     transform: translateX(6px);
   }
+  @media all and (max-width:360px){
+    width:297;      
+    margin-left: 1px;
+  }
+  
 `;
 const GuestMainContainer = styled.div``;
 const GuestListImgContainer = styled.span``;
@@ -144,6 +161,7 @@ const HiddenContainer = styled.div`
 const GuestAction = styled.div`
   width: 20%;
   margin-left: 50px;
+
 `;
 
 const HiddenImg = styled.img`

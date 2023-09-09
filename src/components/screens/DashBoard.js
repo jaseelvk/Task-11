@@ -72,11 +72,19 @@ const Container = styled.div`
   width: 100%;
   height: 100hv;
   background-color: #f9f7f8;
+
 `;
 const DashContainer = styled.span`
   display: flex;
-  jsutify-content: space-beteen;
+  jsutify-content: space-between;
   padding: 20px;
+  @media all and (max-width:768px){
+   
+    display: flex;
+  
+    flex-wrap: wrap;
+
+}
 `;
 const MaleContainer = styled.div`
   margin-top: 20px;
@@ -85,6 +93,21 @@ const MaleContainer = styled.div`
   padding: 20px 2px 2px 6px;
   background-color: #a6e3e4;
   border-radius: 20px;
+  @media all and (max-width:768px){
+   
+    width: 48%;
+
+
+}
+
+@media all and (max-width:480px){
+  width: 81%;
+
+}
+@media all and (max-width:360px){
+  width: 100%;
+
+}
 `;
 const ImgContainer = styled.span`
   width: 40px;
@@ -124,6 +147,20 @@ const FemaleContainer = styled.div`
   background-color: #d2a2f6;
   border-radius: 20px;
   margin-left: 20px;
+  @media all and (max-width:768px){
+    margin-left: 6px;
+    width: 48%;
+
+
+}
+@media all and (max-width:480px){
+  width: 81%;
+
+}
+@media all and (max-width:360px){
+  width: 100%;
+
+}
 `;
 
 const TotalCount = styled.h1`
@@ -154,6 +191,17 @@ const GraphContainer = styled.div`
   background-color: #fff;
   border-radius: 20px;
   margin-top: 20px;
+  @media all and (max-width:768px){
+   
+    width:40%;
+   margin-left: 20%;
+    margin-top: 20px;
+
+}
+@media all and (max-width:360px){
+  width:60%;
+}
+
 `;
 const GraphHead = styled.h4`
   padding-top: 20px;

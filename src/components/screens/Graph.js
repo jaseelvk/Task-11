@@ -139,6 +139,10 @@ const GraphContainer = styled.section`
   @media all and (max-width: 480px) {
     width: 100%;
   }
+  @media all and (max-width:480px){
+    display:none;
+  
+  }
 `;
 const Charth3 = styled.h3`
   display: none;
@@ -168,7 +172,7 @@ const BarChartBox = styled.section`
     background-color: #fff;
   }
   @media all and (max-width: 640px) {
-    width: 120%;
+    width: 100%;
   }
   @media all and (max-width: 480px) {
   }
@@ -188,7 +192,7 @@ const GraphHead = styled.section`
   }
   @media all and (max-width: 640px) {
     margin-top: -10px;
-    width: 120%;
+    width: 100%;
   }
 `;
 const GuestTop = styled.section`

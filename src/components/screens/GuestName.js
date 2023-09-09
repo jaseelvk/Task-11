@@ -46,6 +46,9 @@ width:37%
 const  GuestTwocontainer = styled.div`
     display: flex;
     justify-content: space-between;
+    @media all and (max-width:480px){
+      display:none;
+    }
 
 `;
 const RecentName = styled.h4`
